@@ -28,14 +28,20 @@ Defult path for your images "./pics". Change it if you want in "ISTU_practice.st
 There are two ways to include listings:
 
 1. Built-in "listings"-package
+
 	You can write your code in {lstlisting}-tag or include it by \lstinputlisting-command
 	But this way doesn't support cyrillic-symbols
 	And there's no complete style-set for languages
 
 2. Stand-alone highlighter
+
 	Recommended using [this one](http://www.andre-simon.de/doku/highlight/en/highlight.php)
 	Xcode style included. Escape-characters included. You don't have to export style-file.
 
 ### Bibliography
 Use BibTeX. You can use any editor or fill .bib-file manually.
 But in bibs.tex you have to list all your items. That's a bug, but maybe it's my compiler.
+
+## Roadmap
+
+- integrate gulp

@@ -1,0 +1,37 @@
+%!TEX root = main.tex
+% DO CHANGE MANUALLY
+\def\yourTitle{}
+
+% just in case
+\def\yourTitleOne{}
+\def\yourTitleTwo{}
+\def\yourTitleThree{}
+\def\variant{}
+
+\def\yourType{студент}
+\def\group{}
+\def\yourName{}
+
+\def\supervisorType{}
+\def\supervisor{}
+\def\approverType{}
+\def\approver{}
+\def\directorType{}
+\def\director{}
+
+\def\city{Иркутск}
+\def\university{Иркутский национальный исследовательский технический университет}
+\def\faculty{кибернетики им.~Е.~И.~Попова}
+\def\dept{автоматизированных систем}
+
+
+% DO NOT CHANGE MANUALLY
+\author{\yourName, \yourType\ группы\ \group}
+\title{\yourTitle\ (\discipline)}
+\date{\onlyyear\today}
+
+\hypersetup{pdfinfo={
+	Title={\@title},
+	Subject={\yourTitle},
+	Author={\@author},
+}}

@@ -65,19 +65,21 @@
 \definecolor{lstcodeFR}{rgb}{0.95,0.95,0.95}
 
 \newcounter{lstcodeN}[section]
-\setcounter{lstcodeN}{1}
-\newcommand{\lstcode}[4]{
-	\addtocounter{lstcodeN}{1}
-		\vspace{0.5cm}
-		Листинг \thesection.\arabic{lstcodeN} - #4
-		\vspace{-0.25cm}
+\setcounter{lstcodeN}{2}
+\def\thelstcodeN{\thesection.\arabic{lstcodeN}}
+
+\newcommand{\lstcode}[5]{
+	\refstepcounter{lstcodeN}\label{lst:#5}
+	\vspace{0.2cm}
+		Листинг \thelstcodeN --- #4
+	\vspace{-0.2cm}
 	#3
-	\linespread{#2}
+	\setstretch{#2}
 		\begin{framed}
-			\input{#1} 
+			\input{#1}
 		\end{framed}
 	\normalsize
-	\linespread{1}
+	\singlespacing
 }
 
 
@@ -92,7 +94,7 @@
 \newsavebox{\hlboxand}%
 \newsavebox{\hlboxhash}%
 \newsavebox{\hlboxat}%
-\newsavebox{\hlboxpercent}% 
+\newsavebox{\hlboxpercent}%
 \newsavebox{\hlboxhat}%
 \newsavebox{\hlboxsinglequote}%
 \newsavebox{\hlboxbacktick}%
@@ -131,4 +133,6 @@
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0,0,0}{#1}}
 \definecolor{bgcolor}{gray}{0.95}
 %	end 2.
+
+
 \endinput

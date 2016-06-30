@@ -45,6 +45,10 @@ But in bibs.tex you have to list all your items. That's a bug, but maybe it's my
 ### Tables
 Longtable is supported. Header repeats on each page.
 
+### Applications
+
+Names "Приложение А", "Приложение Б"... Included in TOC. Links are the same as usual section.
+
 ## Roadmap
 
 - integrate gulp
